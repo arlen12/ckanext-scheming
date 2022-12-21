@@ -45,7 +45,7 @@ dataset_fields:
 #  validators: ignore_missing
 
 
-#COMPOSITE
+#composite_repeating
 #- field_name: author
 #  label: Author
 #  preset: composite_repeating
