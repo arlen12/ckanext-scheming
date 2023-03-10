@@ -49,11 +49,10 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-
-- field_name: authors
-  preset: repeating_text
-  label: Author
-  form_blanks: 3
+#- field_name: authors
+#  preset: repeating_text
+#  label: Author
+#  form_blanks: 3
 
 
 ###########
