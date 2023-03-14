@@ -49,31 +49,31 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-#- field_name: authors
-#  preset: repeating_text
-#  label: Author
-#  form_blanks: 3
+- field_name: authors
+  preset: repeating_text
+  label: Author
+  form_blanks: 3
 
 ###test restricted 
-- field_name: restricted
-  label: Zugriffsbeschränkung
-  preset: composite
-  subfields:
+#- field_name: restricted
+#  label: Zugriffsbeschränkung
+#  preset: composite
+#  subfields:
   
-  - field_name: level
-    label: Level
-    preset: select
-    form_include_blank_choice: 'false'
-    required: 'true'
-    choices:
-    - value: public
-      label: Public
-    - value: registered
-      label: Registered Users
-    - value: same_organization
-      label: Same Organization Members
-    - value: only_allowed_users
-      label: Allowed Users Only 
+#  - field_name: level
+#    label: Level
+#    preset: select
+#    form_include_blank_choice: 'false'
+#    required: 'true'
+#    choices:
+#    - value: public
+#      label: Public
+#    - value: registered
+#      label: Registered Users
+#    - value: same_organization
+#      label: Same Organization Members
+#   - value: only_allowed_users
+#     label: Allowed Users Only 
 
 
 ###########
