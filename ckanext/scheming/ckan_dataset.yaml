@@ -80,7 +80,7 @@ dataset_fields:
 
 - field_name: contributors
   label: Contributors
-  preset: multiple_text
+  preset: repeating_text
 #
 #- field_name: maintainer
 #  label: Maintainer
