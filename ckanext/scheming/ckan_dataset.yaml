@@ -57,11 +57,27 @@ dataset_fields:
   preset: date
   validators: convert_to_extras
   help_text: Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses Zeitraums kann später nach Einträgen gesucht werden.
-    
+ 
+ 
+ #reperating from SDDI Scheming#
 - field_name: authors
   preset: repeating_text
   label: Author
   form_blanks: 3
+
+- field_name: author
+  label: Autor
+  preset: composite_repeating
+  form_blanks: 1
+  subfields:
+  - field_name: author
+    label: Author
+    form_placeholder: Joe Bloggs
+    display_property: dc:creator
+  - field_name: author_email
+    label: Author Email
+    form_placeholder: joe@example.com
+    display_property: dc:creator
 
 ###test restricted 
 #- field_name: restricted
