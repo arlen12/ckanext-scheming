@@ -93,22 +93,22 @@ dataset_fields:
   subfields:
   - field_name: name
     label: Name
-   form_placeholder: Joe Bloggs
+    form_placeholder: Joe Bloggs
   - field_name: email
-   label: Email
-   form_placeholder: joe@example.com
+    label: Email
+    form_placeholder: joe@example.com
   - field_name: date
-   label: Date
+    label: Date
     preset: date
     form_placeholder: yyyy-mm-mm
   - field_name: identifier_scheme
-   label: Scheme
-   preset: select
-   choices:
-    - value: orcid
-      label: ORCID
-    - value: isni
-     label: ISNI
+    label: Scheme
+    preset: select
+    choices:
+     - value: orcid
+       label: ORCID
+     - value: isni
+       label: ISNI
 
 
 ###########
