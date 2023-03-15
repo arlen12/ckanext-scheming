@@ -58,10 +58,10 @@ dataset_fields:
   validators: convert_to_extras
   help_text: Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses Zeitraums kann später nach Einträgen gesucht werden.
     
-#- field_name: authors
-#  preset: repeating_text
-#  label: Author
-#  form_blanks: 3
+- field_name: authors
+  preset: repeating_text
+  label: Author
+  form_blanks: 3
 
 ###test restricted 
 #- field_name: restricted
