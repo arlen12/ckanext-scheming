@@ -49,6 +49,15 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
+- field_name: begin_collection_date
+  label: Start des Gültigkeitszeitraumes
+  preset: date
+- field_name: end_collection_date
+  label: Ende des Gültigkeitszeitraumes
+  preset: date
+  validators: convert_to_extras
+  help_text: Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses Zeitraums kann später nach Einträgen gesucht werden.
+    
 #- field_name: authors
 #  preset: repeating_text
 #  label: Author
@@ -77,10 +86,10 @@ dataset_fields:
 
 
 ###########
-
-- field_name: contributors
-  label: Contributors
-  preset: repeating_text
+# repeating ################
+#- field_name: contributors
+#  label: Contributors
+#  preset: repeating_text
 #
 #- field_name: maintainer
 #  label: Maintainer
