@@ -34,49 +34,49 @@ dataset_fields:
   help_text: License definitions and additional information can be found at http://opendefinition.org/
 
 ##### requires composite and repeating ext#######
-#- field_name: author
-#  label: Author
-#  preset: composite_repeating
-#  form_blanks: 1
-#  subfields:
-#  - field_name: author
-#    label: Author
-#    form_placeholder: Joe Bloggs
-#  - field_name: author_email
-#    form_placeholder: joe@example.com
-#    label: Author Email
+- field_name: author
+  label: Author
+  preset: composite_repeating
+  form_blanks: 1
+  subfields:
+  - field_name: author
+    label: Author
+    form_placeholder: Joe Bloggs
+  - field_name: author_email
+    form_placeholder: joe@example.com
+    label: Author Email
 
 #####  requires composite and repeating ext #########
-#- field_name: maintainer
-# label: Maintainer
-#  preset: composite_repeating
-#  form_blanks: 1
-#  subfields:
-#  - field_name: maintainer
-#    label: Maintainer
-#    form_placeholder: Joe Bloggs
-#  - field_name: Maintainer Email
-#    form_placeholder: joe@example.com
-#    label: Maintainer Email
-#  - field_name: phone
-#    label: Phone number
-#    display_snippet: text.html
-#    form_placeholder: "+49 8161 71 0000"
-#- field_name: role
-#  label: Role
-#  preset: select
-#    display_snippet: multiple_select.html
-#    choices:
-#     - value: data collector
-#       label: Datensammler
-#     - value: contact person
-#       label: Experte
+- field_name: maintainer
+  label: Maintainer
+  preset: composite_repeating
+  form_blanks: 1
+  subfields:
+  - field_name: maintainer
+    label: Maintainer
+    form_placeholder: Joe Bloggs
+  - field_name: Maintainer Email
+    form_placeholder: joe@example.com
+    label: Maintainer Email
+  - field_name: phone
+    label: Phone number
+    display_snippet: text.html
+    form_placeholder: "+49 8161 71 0000"
+- field_name: role
+  label: Role
+  preset: select
+  display_snippet: multiple_select.html
+  choices:
+  - value: data collector
+    label: Datensammler
+  - value: contact person
+    label: Experte
 
 - field_name: owner_org
   label: Organization
   form_snippet: visibility.html
   help_text: Legt fest wer den Katalogeintrag sehen kann.
-  
+
 - field_name: group
   label: Group
   form_snippet: group.html
@@ -100,7 +100,7 @@ dataset_fields:
   help_text: Über die Versionsnummer können Änderungen am Katalogeintrag sichtbar
     gemacht werden. Je höher die Versionsnummer ist, desto öfter wurde der Katalogeintrag
     bearbeitet.
-    
+
 - field_name: begin_collection_date
   label: Start des Gültigkeitszeitraumes
   preset: date
@@ -110,8 +110,8 @@ dataset_fields:
   validators: convert_to_extras
   help_text: Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses
     Zeitraums kann später nach Einträgen gesucht werden.
-  
-# request spatial #
+
+# request spatial
 - field_name: spatial
   label:
     en: Spatial extent
@@ -129,7 +129,6 @@ dataset_fields:
 
 
 resource_fields:
-
 - field_name: url
   label: URL
   preset: resource_url_upload
@@ -142,27 +141,27 @@ resource_fields:
   label: Description
   form_snippet: markdown.html
   form_placeholder: Some useful notes about the data
-  
+
 - field_name: format
   label: Format
-  preset: resource_format_autocomplete 
- 
-# restricted and composite are required 
-#- field_name: restricted
-#  preset: composite
-#  subfields:
-#  - field_name: level
-#    label: Zugriffsrechte
-#    preset: select
-#    form_include_blank_choice: 'false'
-#    required: 'true'
-#    choices:
-#    - value: public
-#      label: Öffentlich
-#    - value: registered
-#      label: Registrierte Benutzer
-#    - value: same_organization
-#      label: Mitlgieder der selben Organisation
-#    - value: only_allowed_users
-#      label: Nur ausgewählte Benutzer
-#      help_text: Legt fest, wer Zugriff auf die Ressource hat.
+  preset: resource_format_autocomplete
+
+# restricted and composite are required
+- field_name: restricted
+  preset: composite
+  subfields:
+  - field_name: level
+    label: Zugriffsrechte
+    preset: select
+    form_include_blank_choice: 'false'
+    required: 'true'
+    choices:
+    - value: public
+      label: Öffentlich
+    - value: registered
+      label: Registrierte Benutzer
+    - value: same_organization
+      label: Mitlgieder der selben Organisation
+    - value: only_allowed_users
+      label: Nur ausgewählte Benutzer
+      help_text: Legt fest, wer Zugriff auf die Ressource hat.
