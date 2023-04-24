@@ -165,3 +165,8 @@ resource_fields:
           - value: only_allowed_users
             label: Nur ausgewählte Benutzer
             help_text: Legt fest, wer Zugriff auf die Ressource hat.
+    
+    - field_name: allowed_users
+      label: Allowed Users
+      preset: tag_string_autocomplete
+      data-module-source: "/api/2/util/user/autocomplete?q=?"
