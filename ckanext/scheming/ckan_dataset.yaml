@@ -169,4 +169,4 @@ resource_fields:
   - field_name: allowed_users
      label: Allowed Users
      preset: tag_string_autocomplete
-    data-module-source: "/api/2/util/user/autocomplete?q=?"
+     data-module-source: "/api/2/util/user/autocomplete?q=?"
