@@ -40,10 +40,6 @@ dataset_fields:
  #   label: visibility
     form_snippet: visibility.html
     help_text: Legt fest wer den Katalogeintrag sehen kann.
-
-  - field_name: key_field
-    label: key_field
-    form_snippet: custom_form_fields.html
     
   ##### requires composite and repeating ext#######
  # - field_name: author
@@ -120,7 +116,11 @@ dataset_fields:
     help_text:
       Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses
       Zeitraums kann später nach Einträgen gesucht werden.
-
+      
+  - field_name: key_field
+    label: key_field
+    form_snippet: custom_form_fields.html
+    
   # request spatial
   #- field_name: spatial
   #  label:
