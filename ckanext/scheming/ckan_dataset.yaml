@@ -38,14 +38,14 @@ dataset_fields:
     help_text: Legt fest welcher Organisation der Katalogeintrag zugeordnet ist.
 
   - field_name: visibility
-    label: visibility
+ #   label: visibility
     form_snippet: visibility.html
     help_text: Legt fest wer den Katalogeintrag sehen kann.
 
-  - field_name: key_field
-    label: key_field
-    form_snippet: custom_form_fields.html
-    help_text: Add Custom fields
+ # - field_name: key_field
+ #   label: key_field
+ #   form_snippet: custom_form_fields.html
+ #   help_text: Add Custom fields
 
   ##### requires composite and repeating ext#######
  # - field_name: author
