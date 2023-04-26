@@ -117,9 +117,7 @@ dataset_fields:
       Dies markiert den Gültigkeitszeitraum des Katalogeintrags. Anhand dieses
       Zeitraums kann später nach Einträgen gesucht werden.
       
-  - field_name: key_field
-    label: key_field
-    form_snippet: custom_form_fields.html
+  - form_snippet: custom_form_fields.html
     
   # request spatial
   #- field_name: spatial
