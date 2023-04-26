@@ -73,6 +73,11 @@ dataset_fields:
 
   - field_name: owner_org
     label: Organization
+    form_snippet: organization_alone.html
+    help_text: Legt fest welcher Organisation der Katalogeintrag zugeordnet ist.
+
+  - field_name: visibility
+    label: visibility
     form_snippet: visibility.html
     help_text: Legt fest wer den Katalogeintrag sehen kann.
 
