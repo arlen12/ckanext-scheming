@@ -145,6 +145,11 @@ resource_fields:
   - field_name: format
     label: Format
     preset: resource_format_autocomplete
+    
+ - field_name: key_field
+    label: key_field
+    form_snippet: custom_form_fields.html
+    display_snippet:
 
   # restricted and composite are required
   - field_name: restricted
