@@ -31,6 +31,15 @@ dataset_fields:
     label: License
     form_snippet: license.html
     help_text: License definitions and additional information can be found at http://opendefinition.org/
+  
+  - field_name: owner_org
+    label: Organization
+    form_snippet: organization_alone.html
+    help_text: Legt fest welcher Organisation der Katalogeintrag zugeordnet ist.
+
+ # - field_name: key_field
+ #   label: key_field
+ #   form_snippet: custom_form_fields.html
 
   ##### requires composite and repeating ext#######
  # - field_name: author
@@ -71,10 +80,6 @@ dataset_fields:
  #         - value: contact person
  #           label: Experte
 #
-  - field_name: owner_org
-    label: Organization
-    form_snippet: visibility.html
-    help_text: Legt fest wer den Katalogeintrag sehen kann.
 
  # - field_name: group
  #   label: Group
@@ -127,7 +132,10 @@ dataset_fields:
     choices:
       - value: licence_agreement_check
         label: Hiermit bestätige ich, dass sämtliche von mir eingetragenen Daten unter die oben ausgewählte Lizenz fallen.
-    
+
+
+
+
 resource_fields:
   - field_name: url
     label: URL
