@@ -131,7 +131,11 @@ dataset_fields:
     choices:
       - value: licence_agreement_check
         label: Hiermit bestätige ich, dass sämtliche von mir eingetragenen Daten unter die oben ausgewählte Lizenz fallen.
-
+        
+  - field_name: custom-fields
+    label: Custom Field
+    form_snippet: custom_form_fields.html
+    
 resource_fields:
   - field_name: url
     label: URL
