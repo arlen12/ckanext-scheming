@@ -1,4 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 {% extends "package/snippets/additional_info.html" %}
 
 {%- set exclude_fields = [
@@ -21,11 +20,14 @@
             <th scope="row" class="dataset-label" property="rdfs:label">{{ h.scheming_language_text(field.label) }}</th>
      
             <td class="dataset-details" {% if field.display_property %} 
-            property="{{ field.display_property}}"
-          {% endif %}>
-            <p id="para" class="myClass"> {%- snippet 'scheming/snippets/display_field.html', field=field, data=pkg_dict -%}<div id="clickMe" class="clickMe">+</div></p></td>
-
+            property="{{ field.display_property}}">
+          {% endif %}
+            {%- snippet 'scheming/snippets/display_field.html', field=field, data=pkg_dict -%}</td>
         </td>
+          </tr>
+          <tr>
+            <th scope="row" class="dataset-label" property="rdfs:label">{{ _('spatial') }}</th>
+            <td class="dataset-details" property="rdf:value"><p id="para" class="myClass">{{ pkg_dict.spatial }}</p><button id="clickMe" class="clickMe btn btn-primary">+</button></td>
           </tr>
       {% else %}
             <tr>
@@ -59,15 +61,43 @@
 
 
   
-        {% block extras scoped %}
-        {% for extra in h.sorted_extras(pkg_dict.extras) %}
-          {% set key, value = extra %}
-          <tr rel="dc:relation" resource="_:extra{{ i }}">
-            <th scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</th>
-            <td class="dataset-details" property="rdf:value">{{ value }}</td>
-          </tr>
-        {% endfor %}
-      {% endblock %}
+  {% block extras scoped %}
+  {% for extra in h.sorted_extras(pkg_dict.extras) %}
+    {% set key, value = extra %}
+    <tr rel="dc:relation" resource="_:extra{{ i }}">
+      <th scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</th>
+      <td class="dataset-details" property="rdf:value">{{ value }}</td>
+    </tr>
+  {% endfor %}
+{% endblock %}
 
+
+<script>
+
+  const textElement = document.getElementById('para');
+  const toggleBtn = document.getElementById('clickMe');
+  const maxChars = 50;
   
+
+  // Save the original text content
+  const originalText = textElement.innerHTML;
+  // Truncate the text and add ellipsis
+  textElement.innerHTML = originalText.substring(0, maxChars) + '...';
+
+  // Add event listener to toggle button
+  toggleBtn.addEventListener('click', function() {
+    if (textElement.innerHTML === originalText) {
+      // If the full text is currently displayed, truncate it and add ellipsis
+      textElement.innerHTML = originalText.substring(0, maxChars) + '...';
+      toggleBtn.innerHTML = '+';
+
+    } else {
+      // If the truncated text is currently displayed, show the full text
+      textElement.innerHTML = originalText;
+      toggleBtn.innerHTML = '-';
+    }
+});
+
+</script>
+
 {% endblock %}
