@@ -16,11 +16,13 @@ dataset_fields:
 
   - field_name: notes
     label: Description
+    required: true
     form_snippet: markdown.html
     form_placeholder: eg. Some useful notes about the data
 
   - field_name: tag_string
     label: Tags
+    required: true
     preset: tag_string_autocomplete
     form_placeholder: eg. economy, mental health, government
     help_text:
@@ -29,12 +31,14 @@ dataset_fields:
 
   - field_name: license_id
     label: License
+    required: true
     form_snippet: license.html
     help_text: License definitions and additional information can be found at http://opendefinition.org/
 
   ##### requires composite and repeating ext#######
   - field_name: author
     label: Author
+    required: true
     preset: composite_repeating
     form_blanks: 1
     subfields:
@@ -153,6 +157,7 @@ resource_fields:
 
   - field_name: format
     label: Format
+    required: true
     preset: resource_format_autocomplete
 
   # restricted and composite are required
