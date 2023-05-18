@@ -15,7 +15,7 @@
 
   {%- for field in schema.dataset_fields -%}
     {%- if field.field_name not in exclude_fields and field.display_snippet is not none -%}
-      {% if field.field_name == 'spatial' %}
+      {% if field.field_name == 'spatial' and pkg_dict.spatial %}
           <tr>
             <th scope="row" class="dataset-label" property="rdfs:label">{{ h.scheming_language_text(field.label) }}</th>
      
