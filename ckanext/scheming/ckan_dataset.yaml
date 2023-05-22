@@ -6,6 +6,7 @@ about_url: http://github.com/ckan/ckanext-scheming
 dataset_fields:
   - field_name: title
     label: Title
+    validators: scheming_required
     preset: title
     form_placeholder: eg. A descriptive title
 
@@ -16,13 +17,13 @@ dataset_fields:
 
   - field_name: notes
     label: Description
-    required: true
+    validators: scheming_required
     form_snippet: markdown.html
     form_placeholder: eg. Some useful notes about the data
 
   - field_name: tag_string
     label: Tags
-    required: true
+    validators: scheming_required
     preset: tag_string_autocomplete
     form_placeholder: eg. economy, mental health, government
     help_text:
@@ -31,14 +32,14 @@ dataset_fields:
 
   - field_name: license_id
     label: License
-    required: true
+    validators: scheming_required
     form_snippet: license.html
     help_text: License definitions and additional information can be found at http://opendefinition.org/
 
   ##### requires composite and repeating ext#######
   - field_name: author
     label: Author
-    required: true
+    validators: scheming_required
     preset: composite_repeating
     form_blanks: 1
     subfields:
@@ -80,10 +81,14 @@ dataset_fields:
     form_snippet: organization_alone.html
     help_text: Legt fest welcher Organisation der Katalogeintrag zugeordnet ist.
   
-  - field_name: visibility
-    label: visibility
+  - field_name: owner_org
+    label: Organization
     form_snippet: visibility.html
-    help_text: Legt fest wer den Katalogeintrag sehen kann.
+  
+#  - field_name: visibility
+#    label: visibility
+#    form_snippet: visibility.html
+#    help_text: Legt fest wer den Katalogeintrag sehen kann.
     
   - field_name: group
     label: Group
@@ -131,7 +136,7 @@ dataset_fields:
 
   - field_name: licence_agreement
     label: Datenschutzerklärung
-    required: true
+    validators: scheming_required
     preset: multiple_checkbox
     choices:
       - value: licence_agreement_check
@@ -157,7 +162,7 @@ resource_fields:
 
   - field_name: format
     label: Format
-    required: true
+    validators: scheming_required
     preset: resource_format_autocomplete
 
   # restricted and composite are required
