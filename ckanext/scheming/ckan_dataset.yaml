@@ -169,7 +169,6 @@ resource_fields:
   - field_name: format
     label: Format
     required: true
-    validators: scheming_required
     preset: resource_format_autocomplete
 
   # restricted and composite are required
