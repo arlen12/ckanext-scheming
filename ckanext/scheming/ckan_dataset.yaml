@@ -6,6 +6,7 @@ about_url: http://github.com/ckan/ckanext-scheming
 dataset_fields:
   - field_name: title
     label: Title
+    required: true
     validators: scheming_required
     preset: title
     form_placeholder: eg. A descriptive title
@@ -17,12 +18,14 @@ dataset_fields:
 
   - field_name: notes
     label: Description
+    required: true
     validators: scheming_required
     form_snippet: markdown.html
     form_placeholder: eg. Some useful notes about the data
 
   - field_name: tag_string
     label: Tags
+    required: true
     validators: scheming_required
     preset: tag_string_autocomplete
     form_placeholder: eg. economy, mental health, government
@@ -32,6 +35,7 @@ dataset_fields:
 
   - field_name: license_id
     label: License
+    required: true
     validators: scheming_required
     form_snippet: license.html
     help_text: License definitions and additional information can be found at http://opendefinition.org/
@@ -39,6 +43,7 @@ dataset_fields:
   ##### requires composite and repeating ext#######
   - field_name: author
     label: Author
+    required: true
     validators: scheming_required
     preset: composite_repeating
     form_blanks: 1
@@ -136,6 +141,7 @@ dataset_fields:
 
   - field_name: licence_agreement
     label: Datenschutzerklärung
+    required: true
     validators: scheming_required
     preset: multiple_checkbox
     choices:
@@ -162,6 +168,7 @@ resource_fields:
 
   - field_name: format
     label: Format
+    required: true
     validators: scheming_required
     preset: resource_format_autocomplete
 
