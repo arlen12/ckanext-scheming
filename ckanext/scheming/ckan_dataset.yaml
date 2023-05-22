@@ -38,7 +38,7 @@ dataset_fields:
     required: true
     validators: scheming_required
     form_snippet: license.html
-    help_text: License definitions and additional information can be found at http://opendefinition.org/
+    help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
 
   ##### requires composite and repeating ext#######
   - field_name: author
