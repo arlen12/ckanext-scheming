@@ -43,13 +43,13 @@ dataset_fields:
   ##### requires composite and repeating ext#######
   - field_name: author
     label: Author
-    required: true
-    validators: scheming_required
     preset: composite_repeating
     form_blanks: 1
     subfields:
       - field_name: author
         label: Author
+        required: true
+        validators: scheming_required
         form_placeholder: Joe Bloggs
       - field_name: author_email
         form_placeholder: joe@example.com
