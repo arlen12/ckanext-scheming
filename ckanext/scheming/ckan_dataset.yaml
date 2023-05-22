@@ -25,7 +25,7 @@ dataset_fields:
 
   - field_name: tag_string
     label: Tags
-    required: true
+    validators: scheming_required
     preset: tag_string_autocomplete
     form_placeholder: eg. economy, mental health, government
     help_text:
