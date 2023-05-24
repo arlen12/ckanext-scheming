@@ -78,7 +78,7 @@ dataset_fields:
           - value: data collector
             label: Datensammler
           - value: contact person
-            label: Experte
+            label: Experte 
 
   - field_name: owner_org
     label: Organization
