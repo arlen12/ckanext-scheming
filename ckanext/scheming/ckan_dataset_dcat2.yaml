@@ -99,7 +99,7 @@ dataset_fields:
 #    form_snippet: group.html
 #    display_snippet:
 
-  - field_name: language
+  - field_name: extra:language
     label: Language
     validators: ignore_missing
     preset: select
