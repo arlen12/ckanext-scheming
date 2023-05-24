@@ -32,7 +32,7 @@ dataset_fields:
       Über Tags können Katalogeinträge besser gefunden werden. Ein Tag ist
       ein Wort, welches im Zusammenhang mit dem Eintrag steht.
 
-  - field_name: resource:license
+  - field_name: resource:license 
     label: License
     required: true
     validators: scheming_required
