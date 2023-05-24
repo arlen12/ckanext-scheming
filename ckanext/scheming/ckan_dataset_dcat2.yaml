@@ -45,12 +45,12 @@ dataset_fields:
     preset: composite_repeating
     form_blanks: 1
     subfields:
-      - field_name: contact_name
+      - field_name: author
         label: Author
         required: true
         validators: scheming_required
         form_placeholder: Joe Bloggs
-      - field_name: extra:contact_email
+      - field_name: author_email
         form_placeholder: joe@example.com
         label: Author Email
 
