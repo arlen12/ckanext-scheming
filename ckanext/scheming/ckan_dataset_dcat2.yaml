@@ -119,7 +119,7 @@ dataset_fields:
       gemacht werden. Je höher die Versionsnummer ist, desto öfter wurde der Katalogeintrag
       bearbeitet.
 
-  - field_name: extra:temporal_start
+  - field_name: temporal_start
     label: Start des Gültigkeitszeitraumes
     preset: date
   - field_name: end_collection_date
