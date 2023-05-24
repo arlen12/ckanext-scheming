@@ -40,17 +40,17 @@ dataset_fields:
     help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
 
   ##### requires composite and repeating ext#######
-  - field_name: author
+  - field_name: contact_name
     label: Author
     preset: composite_repeating
     form_blanks: 1
     subfields:
-      - field_name: author
+      - field_name: contact_name
         label: Author
         required: true
         validators: scheming_required
         form_placeholder: Joe Bloggs
-      - field_name: author_email
+      - field_name: extra:contact_email
         form_placeholder: joe@example.com
         label: Author Email
 
