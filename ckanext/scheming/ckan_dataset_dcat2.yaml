@@ -11,7 +11,7 @@ dataset_fields:
     preset: title
     form_placeholder: eg. A descriptive title
 
-  - field_name: name
+  - field_name: url
     label: URL
     preset: dataset_slug
     form_placeholder: eg. my-dataset
