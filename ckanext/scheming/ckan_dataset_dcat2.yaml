@@ -11,7 +11,7 @@ dataset_fields:
     preset: title
     form_placeholder: eg. A descriptive title
 
-  - field_name: url
+  - field_name: name
     label: URL
     preset: dataset_slug
     form_placeholder: eg. my-dataset
@@ -32,7 +32,7 @@ dataset_fields:
       Über Tags können Katalogeinträge besser gefunden werden. Ein Tag ist
       ein Wort, welches im Zusammenhang mit dem Eintrag steht.
 
-  - field_name: license
+  - field_name: resource:license
     label: License
     required: true
     validators: scheming_required
