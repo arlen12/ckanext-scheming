@@ -55,7 +55,7 @@ dataset_fields:
         label: Author Email
 
   #####  requires composite and repeating ext #########
-  - field_name: maintainer
+  - field_name: contact_name
     label: Maintainer
     preset: composite_repeating
     form_blanks: 1
