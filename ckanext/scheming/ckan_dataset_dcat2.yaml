@@ -110,7 +110,7 @@ dataset_fields:
         label: English
         help_text: Legt fest in welcher Sprache der Katalogeintrag verfasst ist.
 
-  - field_name: extra:dcat_version
+  - field_name: version
     label: Version
     validators: ignore_missing unicode_safe package_version_validator
     form_placeholder: "1.0"
@@ -119,7 +119,7 @@ dataset_fields:
       gemacht werden. Je höher die Versionsnummer ist, desto öfter wurde der Katalogeintrag
       bearbeitet.
 
-  - field_name: begin_collection_date
+  - field_name: extra:temporal_start
     label: Start des Gültigkeitszeitraumes
     preset: date
   - field_name: end_collection_date
