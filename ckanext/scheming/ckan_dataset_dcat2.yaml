@@ -35,13 +35,15 @@ dataset_fields:
 #  - field_name: license_id
 #    label: License
 
-  - field_name: license_id
-    label: License
-    form_snippet: license.html
-    help_text:
-      Über die Versionsnummer können Änderungen am Katalogeintrag sichtbar
-      gemacht werden. Je höher die Versionsnummer ist, desto öfter wurde der Katalogeintrag
-      bearbeitet. 
+- field_name: license_id
+  label: License
+  required: true
+  form_snippet: license.html
+  help_text: License definitions and additional information can be found at http://opendefinition.org/.
+    Es wird empfohlen Creative Commons Zero (CC 0, Nachnutzung ohne Einschränkung)
+    oder Creative Commons Namensnennung (CC BY, Nachnutzung ohne Einschränkung aber
+    mit Namensnennung) für die offene Daten zu nutzen.
+
  
 #  - field_name: license_id
 #    label: License
