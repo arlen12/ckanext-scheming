@@ -35,7 +35,7 @@ dataset_fields:
 #  - field_name: license_id
 #    label: License
 
-  - field_name: Dataset.license_id
+  - field_name: Dataset:license_id
     label: License
     required: true
     validators: scheming_required
