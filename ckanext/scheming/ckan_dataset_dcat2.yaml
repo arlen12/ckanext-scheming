@@ -35,16 +35,11 @@ dataset_fields:
 #  - field_name: license_id
 #    label: License
 
-- field_name: license_id
-  label: License
-  required: true
-  form_snippet: license.html
-  help_text: License definitions and additional information can be found at http://opendefinition.org/.
-    Es wird empfohlen Creative Commons Zero (CC 0, Nachnutzung ohne Einschränkung)
-    oder Creative Commons Namensnennung (CC BY, Nachnutzung ohne Einschränkung aber
-    mit Namensnennung) für die offene Daten zu nutzen.
+  - field_name: resource:license
+    label: License
+    required: true
+    validators: scheming_required
 
- 
 #  - field_name: license_id
 #    label: License
 #    required: true
@@ -150,7 +145,7 @@ dataset_fields:
  #   form_snippet: spatial.html
  #   help_text: Über eine räumliche Ausdehnung (Punkt oder Polygon, nicht beides gleichzeitig) kann später nach Katalogeinträgen gesucht werden.
 
-  - field_name: licence_agreement
+  - field_name: sence_agreement
     label: Datenschutzerklärung
     required: true
     validators: scheming_required
