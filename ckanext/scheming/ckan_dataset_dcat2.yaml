@@ -35,17 +35,17 @@ dataset_fields:
 #  - field_name: license_id
 #    label: License
 
-#  - field_name: resource:license
-#    label: License
-#    required: true
-#    validators: scheming_required
-
   - field_name: license_id
     label: License
     required: true
-    form_snippet: license.html
     validators: scheming_required
-    help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
+
+#  - field_name: license_id
+#    label: License
+#    required: true
+#    form_snippet: license.html
+#    validators: scheming_required
+#    help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
 
   ##### requires composite and repeating ext#######
   - field_name: contact_name
