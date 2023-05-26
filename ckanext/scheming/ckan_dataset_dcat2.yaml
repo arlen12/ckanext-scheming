@@ -33,19 +33,19 @@ dataset_fields:
       ein Wort, welches im Zusammenhang mit dem Eintrag steht.
 
 
-  - field_name: license
-    label:
-      en: License
-      de: Lizenz
-      fr: Licence
-      it: Licenza
+#  - field_name: license
+#    label:
+#      en: License
+#      de: Lizenz
+#      fr: Licence
+#      it: Licenza
  
- # - field_name: license 
- #   label: License
- #   required: true
- #   validators: scheming_required
- #   form_snippet: license.html
- #   help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
+  - field_name: license_id
+    label: License
+    required: true
+    validators: scheming_required
+    form_snippet: license.html
+    help_text: License definitions and additional information can be found at http://opendefinition.org/ Es wird empfohlen Creative Commons Zero oder Creative Commons Namensnennung für die offene Daten zu nutzen.
 
   ##### requires composite and repeating ext#######
   - field_name: contact_name
