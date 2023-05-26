@@ -34,11 +34,7 @@ dataset_fields:
 
 
   - field_name: license_id
-    label:
-      en: License
-      de: Lizenz
-      fr: Licence
-      it: Licenza
+    label: License
  
 #  - field_name: license_id
 #    label: License
